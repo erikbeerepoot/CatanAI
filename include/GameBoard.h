@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <vector>
-
+#include <map>
 #include "Tile.h"
 #endif /* defined(__CatanAI__GameBoard__) */
 
@@ -24,5 +24,7 @@ class GameBoard {
         TileSet                 GetTiles();
         std::vector<Tile>       GetTileByNumber(int number);
     private:
-        TileSet     tiles;
+        std::map<int,std::vector<Tile>>     tiles;
+    
+        TileSet CreateBasicBoard();
 };
