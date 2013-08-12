@@ -13,7 +13,6 @@
 #include <vector>
 #include <map>
 #include "Tile.h"
-#endif /* defined(__CatanAI__GameBoard__) */
 
 typedef std::array<Tile,19> TileSet;
 
@@ -28,3 +27,5 @@ class GameBoard {
     
         TileSet CreateBasicBoard();
 };
+
+#endif /* defined(__CatanAI__GameBoard__) */

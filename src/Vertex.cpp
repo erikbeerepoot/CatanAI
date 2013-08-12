@@ -9,6 +9,10 @@
 
 Vertex::Vertex() : owner(NULL) {}
 
+/**
+ * /name    GetOwner
+ * /brief   Gets the owner of this vertex
+ */
 Player* Vertex::GetOwner(){
     return owner;
 }

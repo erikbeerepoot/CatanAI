@@ -9,7 +9,7 @@
 #include <iostream>
 #include <array>
 
-#include "GameBoard.h"
+#include "Game.h"
 
 const int majorVersion = 0;
 const int minorVersion = 1;
@@ -22,12 +22,8 @@ int main(int argc, char**argv){
     std::cout << "***********************************" << std::endl;
     
     
-    GameBoard board;
-    TileSet tiles = board.GetTiles();
+    Game game;
     
-    for(auto it=tiles.begin();it!=tiles.end();++it){
-        std::cout << "type: " << (*it).GetType() << std::endl;
-    }
     
     return 0;
 }

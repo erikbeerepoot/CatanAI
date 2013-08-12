@@ -85,6 +85,10 @@ TileSet GameBoard::GetTiles(){
 }
 
 
+/**
+ * /name    CreateBasicBoard
+ * /brief   Creates the basic "inner" board of the game 
+ */
 TileSet GameBoard::CreateBasicBoard(){
     int totalResourceCount = kNumWoodTiles;
     int idx = 0;

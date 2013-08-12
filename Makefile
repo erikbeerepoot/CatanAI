@@ -11,10 +11,10 @@ LDFLAGS = #-shared
 #TARGET = $(DEPLOY_DIR)/libcatanAI.so
 TARGET = $(DEPLOY_DIR)/catanAI
 
-_INCLUDES = Player.h Tile.h Vertex.h GameBoard.h
+_INCLUDES = Player.h Tile.h Vertex.h GameBoard.h DecisionModels.h Game.h
 INCLUDES = $(patsubst %,$(INCLUDE_DIR)/%,$(_INCLUDES))
 
-_OBJ = Player.o Tile.o Vertex.o GameBoard.o main.o
+_OBJ = Player.o Tile.o Vertex.o GameBoard.o main.o DecisionModels.o Game.o
 OBJ = $(patsubst %,$(BUILD_DIR)/%,$(_OBJ))
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp $(INCLUDES)

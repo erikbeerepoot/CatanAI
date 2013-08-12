@@ -13,10 +13,18 @@ Tile::Tile(){
     resourceType = invalid;
 }
 
+/**
+ * /name    Tile
+ * /brief   Constructs a new Tile with type
+ */
 Tile::Tile(ResourceType type){
     resourceType = type;
 }
 
+/**
+ * /name    GetType
+ * /brief   Gets the resource type of this tile
+ */
 const ResourceType Tile::GetType(){
     return resourceType;
 }

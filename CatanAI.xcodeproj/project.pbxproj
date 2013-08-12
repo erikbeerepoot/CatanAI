@@ -19,6 +19,10 @@
 		0311CEFF17B8256D007118FE /* Vertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vertex.cpp; sourceTree = "<group>"; };
 		0311CF0017B82582007118FE /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		0311CF0117B83238007118FE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0375890217B86B26001ACA45 /* DecisionModels.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DecisionModels.cpp; sourceTree = "<group>"; };
+		0375890417B86D0A001ACA45 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = src/Game.cpp; sourceTree = SOURCE_ROOT; };
+		0375890617B86DCE001ACA45 /* DecisionModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecisionModels.h; sourceTree = "<group>"; };
+		0375890717B86DCE001ACA45 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		0399D22D17B8370B00D1D6EA /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
 		0399D22E17B8371300D1D6EA /* Resource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resource.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,6 +40,8 @@
 		0311CEF417B8256D007118FE /* include */ = {
 			isa = PBXGroup;
 			children = (
+				0375890617B86DCE001ACA45 /* DecisionModels.h */,
+				0375890717B86DCE001ACA45 /* Game.h */,
 				0311CEF517B8256D007118FE /* GameBoard.h */,
 				0311CEF617B8256D007118FE /* GlobalTypes.h */,
 				0311CEF717B8256D007118FE /* Player.h */,
@@ -49,6 +55,7 @@
 		0311CEFA17B8256D007118FE /* src */ = {
 			isa = PBXGroup;
 			children = (
+				0375890417B86D0A001ACA45 /* Game.cpp */,
 				0311CEFB17B8256D007118FE /* GameBoard.cpp */,
 				0311CEFC17B8256D007118FE /* GlobalTypes.cpp */,
 				0311CEFD17B8256D007118FE /* Player.cpp */,
@@ -56,6 +63,7 @@
 				0311CEFF17B8256D007118FE /* Vertex.cpp */,
 				0311CF0117B83238007118FE /* main.cpp */,
 				0399D22E17B8371300D1D6EA /* Resource.cpp */,
+				0375890217B86B26001ACA45 /* DecisionModels.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
