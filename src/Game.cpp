@@ -9,3 +9,6 @@
 #include "Game.h"
 #include "GameBoard.h"
 
+GameBoard& Game::GetGameBoard(){
+    return board;
+}

@@ -19,15 +19,19 @@ class Tile {
 public:
     Tile();
     Tile(ResourceType tileType);
+    void SetTileNumber(int number_in);
+    int GetTileNumber();
     
     const ResourceType GetType();
     bool isBlockedByRobber();
     std::array<Vertex,6>    GetVertices;
     
+    
 private:
     std::array<Vertex,6>    vertices;
     ResourceType            resourceType;
     bool                    blockedByRobber;
+    int                     number;
 };
 
 #endif /* defined(__CatanAI__Tile__) */

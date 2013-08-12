@@ -21,7 +21,7 @@ class DecisionModels {
 public:
     DecisionModels(Game &game_in);
 private:
-    std::vector<ExpectedResource> ComputeExpectedResourcesPerTurn();
+    std::vector<ExpectedResource> ComputeExpectedResourcesPerTurnAtVertex(const Vertex &vertex);
     Vertex ComputeOptimalSettlementLocation();
     
     Game &game;

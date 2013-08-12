@@ -13,7 +13,8 @@
 #include "GameBoard.h"
 
 class Game {
-    const GameBoard & GetGameBoard();
+public:
+    GameBoard& GetGameBoard();
 private:
     GameBoard board;
     

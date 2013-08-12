@@ -72,7 +72,7 @@ std::vector<Tile> GameBoard::GetTileByNumber(int number){
  * /name    GetTiles
  * /brief   Returns the tileset for this gameboard
  */
-TileSet GameBoard::GetTiles(){
+TileSet GameBoard::GetAllTiles(){
     TileSet tileset;
     int idx = 0;
     for(auto tileIt=tiles.begin();tileIt!=tiles.end();tileIt++){
@@ -121,4 +121,12 @@ TileSet GameBoard::CreateBasicBoard(){
     //shuffle for random arrangement
     std::random_shuffle(tileset.begin(), tileset.end());
     return tileset;
+}
+
+/**
+ * /name    GetTilesForVertex
+ * /brief   Gets the tiles that contain this vertex
+ */
+std::vector<Tile> GameBoard::GetTilesForVertex(const Vertex &vertex){
+    return std::vector<Tile>();
 }

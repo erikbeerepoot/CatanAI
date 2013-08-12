@@ -30,3 +30,18 @@ const ResourceType Tile::GetType(){
 }
 
 
+/**
+ * /name    SetNumber
+ * /brief   sets the tile number of this tile
+ */
+void Tile::SetTileNumber(const int number_in){
+    number = number_in;
+}
+
+/**
+ * /name    GetTileNumber
+ * /brief   Returns the tile number of this tile
+ */
+int Tile::GetTileNumber(){
+    return number;
+}

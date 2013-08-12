@@ -7,10 +7,12 @@
 //
 
 #include "DecisionModels.h"
-
+#include "Game.h"
 
 //Probability distribution function for two dice
-const std::array<std::pair<int,float>,11> dicePDF = {
+const std::array<std::pair<int,float>,13> dicePDF = {
+    std::pair<int,float>(0,0),
+    std::pair<int,float>(1,0),
     std::pair<int,float>(2,0.0278),
     std::pair<int,float>(3,0.0556),
     std::pair<int,float>(4,0.0833),
@@ -35,8 +37,17 @@ DecisionModels::DecisionModels(Game &game_in) : game(game_in){}
  * /brief       Given a hashed tileset, returns the expected resources per turn for a vertex
  */
 std::vector<ExpectedResource> DecisionModels::ComputeExpectedResourcesPerTurnAtVertex(const Vertex &vertex){
+    if(vertex.GetOwner()==NULL) return std::vector<ExpectedResource>();
+    GameBoard gameboard= game.GetGameBoard();
     
+    //get the tiles associated with this vertex
+    std::vector<Tile> tiles = gameboard.GetTilesForVertex(vertex);
+    if(tiles.size()<1) return std::vector<ExpectedResource>();
     
+    //for each tile, compute expected resource production
+    for(auto it=tiles.begin();it!=tiles.end();++it){
+//        it->GetNumber
+    }
     
     return std::vector<ExpectedResource>();
 }

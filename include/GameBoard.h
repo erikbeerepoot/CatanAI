@@ -20,8 +20,9 @@ class GameBoard {
     public:
         GameBoard();
     
-        TileSet                 GetTiles();
+        TileSet                 GetAllTiles();
         std::vector<Tile>       GetTileByNumber(int number);
+        std::vector<Tile>       GetTilesForVertex(const Vertex &vertex);
     private:
         std::map<int,std::vector<Tile>>     tiles;
     
